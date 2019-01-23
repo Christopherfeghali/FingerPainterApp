@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fingerpainterapp.MainActivity">
+
+    <com.example.fingerpainterapp.FingerPainterView
+        android:id="@+id/canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/Brushbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/ColourButton"
+        android:onClick="configureBrushButton"
+        android:text="Brush" />
+
+    <Button
+        android:id="@+id/ColourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Brushbutton"
+        android:layout_alignBottom="@+id/Brushbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Colour" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ColourButton"
+        android:layout_alignBottom="@+id/ColourButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:onClick="ConfigureClearButton"
+        android:text="Clear" />
+
+</android.widget.RelativeLayout>
+
+

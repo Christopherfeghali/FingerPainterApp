@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fingerpainterapp.Colour_Activity">
+
+    <Button
+        android:id="@+id/RedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="68dp"
+        android:onClick="ConfigureRedButton"
+        android:text="RED" />
+
+    <Button
+        android:id="@+id/GreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RedButton"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/RedButton"
+        android:text="Green"
+        android:onClick="ConfigureGreenButton"
+        />
+
+    <Button
+        android:id="@+id/BlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/RedButton"
+        android:layout_below="@+id/RedButton"
+        android:layout_marginTop="28dp"
+        android:onClick="ConfigureBlueButton"
+        android:text="Blue" />
+
+    <Button
+        android:id="@+id/YellowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BlueButton"
+        android:layout_alignStart="@+id/GreenButton"
+        android:text="Yellow"
+        android:onClick="ConfigureYellowButton"
+        />
+
+    <Button
+        android:id="@+id/BlackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/BlueButton"
+        android:layout_below="@+id/BlueButton"
+        android:layout_marginTop="31dp"
+        android:onClick="ConfigureBlackButton"
+        android:text="Black" />
+
+    <Button
+        android:id="@+id/GreyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/YellowButton"
+        android:layout_alignTop="@+id/BlackButton"
+        android:onClick="ConfigureGreyButton"
+        android:text="Grey" />
+
+    <Button
+        android:id="@+id/WhiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/BlackButton"
+        android:layout_below="@+id/BlackButton"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="18dp"
+        android:onClick="ConfigureWhiteButton"
+        android:text="White" />
+
+</android.widget.RelativeLayout>
